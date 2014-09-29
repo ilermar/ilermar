@@ -1,0 +1,9 @@
+# Use PHP5 as default
+AddHandler application/x-httpd-php5 .php
+
+<files .htaccess>
+	Order allow,deny
+	deny from all
+</files>
+
+Options All -Indexes

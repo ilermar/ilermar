@@ -1,0 +1,142 @@
+@import 'nib/vendor'
+@import 'nib/gradients'
+
+/*
+ * HTML5 Boilerplate
+ */
+
+/* =============================================================================
+   Variables
+   ========================================================================== */
+
+bckgrnd_color = #DDDDDD
+blue_logo     = #043080
+font_color    = #131B22
+font_size     = 16px
+
+
+/* ========================================================================== */
+
+/* NORMALIZE */
+
+@import 'normalize.styl'
+
+
+/* ==|== primary styles =====================================================
+   Author: Ivan Lerma Reyes
+   ========================================================================== */
+body
+  background bckgrnd_color
+  color font_color
+  font-size font_size
+  text-align center
+
+.main
+  height 420px
+  left 50%
+  margin-left -150px
+  margin-top -210px
+  position absolute
+  top 50%
+  width 300px
+
+  figure
+    left -70px
+    position absolute
+    top -60px
+
+  figcaption
+    font-family Georgia, Times, serif
+    font-weight bold
+    position absolute
+    right - 100px
+    top 35px
+    text-align right
+    text-shadow 2px 2px 2px white
+
+  img 
+    width 150px
+    
+  p
+    background white
+    border-right 2px solid blue_logo
+    border-bottom 2px solid blue_logo
+    box-shadow 5px 5px 5px blue_logo
+    font-size 0.9em
+    margin 1em 0 0.5em 0
+    padding 0.4em 0.5em
+    text-align left
+    text-indent 5em
+
+.socialNetwork
+  div
+    font-size 0.9em
+
+  ul 
+    list-decoration none
+    margin 0
+    text-align right
+
+    li
+      cursor pointer
+      display inline-block  
+      height 32px
+      width 32px
+
+      img
+        width 32px        
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+// For image replacement
+.ir
+  border 0
+  font 0/0 a
+  text-shadow none
+  color transparent
+  background-color transparent
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+.hidden
+  display none !important
+  visibility hidden
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+.visuallyhidden
+  border 0
+  clip rect(0 0 0 0)
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
+  width 1px
+
+// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus
+ clip auto
+ height auto
+ margin 0
+ overflow visible
+ position static
+ width auto
+
+// Hide visually and from screenreaders, but maintain layout
+.invisible
+  visibility hidden
+
+// Contain floats: h5bp.com/q
+.clearfix
+  *zoom 1
+
+  &:before
+  &:after
+    content ""
+    display table
+
+  &:after
+    clear both
+
+@import 'responsive.styl'
